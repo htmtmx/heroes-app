@@ -1,9 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router';
 
 import { Login } from '../auth';
-import { Dc } from '../heroes';
-import { Error } from '../heroes';
-import { Marvel } from '../heroes';
+import { Dc, Error, Marvel } from '../heroes';
 import { Navbar } from '../ui';
 
 export const AppRouter = () => {
