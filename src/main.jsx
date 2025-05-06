@@ -1,10 +1,14 @@
-import { StrictMode } from 'react'
+import { BrowserRouter } from 'react-router-dom';
 import { createRoot } from 'react-dom/client'
-import './styles.css'
 import { HeroesApp } from './HeroesApp.jsx'
+import { StrictMode } from 'react'
+
+import './styles.css'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <HeroesApp/>
+    <StrictMode>
+        <BrowserRouter basename='/'>
+            <HeroesApp/>
+        </BrowserRouter>
   </StrictMode>,
 )
