@@ -1,22 +1,18 @@
-import { Navigate, Route, Routes } from 'react-router';
+import { Route, Routes } from 'react-router';
 
 import { Login } from '../auth';
-import { Dc, Error, Marvel } from '../heroes';
-import { Navbar } from '../ui';
+import { HeroesRoutes } from '../heroes/routes/HeroesRoutes';
+import React from 'react';
 
 export const AppRouter = () => {
-  return (
-      <>
-          <Navbar/>
-          <Routes>
-              <Route path='/' element={<Navigate to={'marvel'} />}  />
-              <Route path='dc' element={<Dc />} />
-              <Route path='marvel' element={<Marvel />} />
-              <Route path='/*' element={<Error />} />
-              <Route path='/auth'>
-                <Route index element={<Login />} />
-              </Route>
-          </Routes>
-      </>
-  )
+    return (
+        <>
+            <Routes>
+                <Route path='/*' element={<HeroesRoutes />} />
+                <Route path='/auth'>
+                    <Route index element={<Login />} />
+                </Route>
+            </Routes>
+        </>
+    )
 }
