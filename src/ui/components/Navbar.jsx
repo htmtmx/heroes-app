@@ -1,6 +1,10 @@
-import { NavLink, Outlet } from "react-router";
+import { NavLink, Outlet, useNavigate } from "react-router";
 
 export const Navbar = () => {
+    const navigate = useNavigate();
+    const onLogout = () => {
+        navigate("auth", { replace: true, });
+    }
 
     return (
         <>
@@ -35,7 +39,12 @@ export const Navbar = () => {
                         <span className='nav-item nav-link text-primary'>
                             Cesar
                         </span>
-                        <button className='nav-item nav-link btn'>Logout</button>
+                        <button
+                            className='nav-item nav-link btn'
+                            onClick={onLogout}
+                        >
+                            Logout
+                        </button>
                     </ul>
                 </div>
             </nav>
