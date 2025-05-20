@@ -1,4 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router';
+
 import { Navbar } from '../../ui';
 import { Dc, Error, Hero, Marvel, Search } from '../pages';
 
@@ -16,5 +17,5 @@ export const HeroesRoutes = () => {
                 </Route>
             </Routes>
         </>
-    )
-}
+    );
+};

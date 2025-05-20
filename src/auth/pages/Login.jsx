@@ -1,10 +1,10 @@
-import { useNavigate } from 'react-router'
+import { useNavigate } from 'react-router';
 
 export const Login = () => {
     const navigate = useNavigate();
 
     const onLogin = () => {
-        navigate('/', { replace: true })
+        navigate('/', { replace: true });
     };
 
     return (
@@ -17,5 +17,5 @@ export const Login = () => {
                 Login
             </button>
         </div>
-    )
-}
+    );
+};

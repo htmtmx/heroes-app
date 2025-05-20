@@ -2,7 +2,6 @@ import { Route, Routes } from 'react-router';
 
 import { Login } from '../auth';
 import { HeroesRoutes } from '../heroes/routes/HeroesRoutes';
-import React from 'react';
 
 export const AppRouter = () => {
     return (
@@ -14,5 +13,5 @@ export const AppRouter = () => {
                 </Route>
             </Routes>
         </>
-    )
-}
+    );
+};

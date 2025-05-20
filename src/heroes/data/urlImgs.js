@@ -8,16 +8,16 @@ import martian from  '../../assets/dc-martian.jpg';
 import robin from  '../../assets/dc-robin.jpg';
 import superman from  '../../assets/dc-superman.jpg';
 import wonder from  '../../assets/dc-wonder.jpg';
-import marvspider from  '../../assets/marvel-spider.jpg';
 import marvcaptain from  '../../assets/marvel-captain.jpg';
-import marviron from  '../../assets/marvel-iron.jpg';
-import marvthor from  '../../assets/marvel-thor.jpg';
-import marvhulk from  '../../assets/marvel-hulk.jpg';
-import marvwolverine from  '../../assets/marvel-wolverine.jpg';
+import marvcyclops from  '../../assets/marvel-cyclops.jpg';
 import marvdaredevil from  '../../assets/marvel-daredevil.jpg';
 import marvhawkeye from  '../../assets/marvel-hawkeye.jpg';
-import marvcyclops from  '../../assets/marvel-cyclops.jpg';
+import marvhulk from  '../../assets/marvel-hulk.jpg';
+import marviron from  '../../assets/marvel-iron.jpg';
 import marvsilver from  '../../assets/marvel-silver.jpg';
+import marvspider from  '../../assets/marvel-spider.jpg';
+import marvthor from  '../../assets/marvel-thor.jpg';
+import marvwolverine from  '../../assets/marvel-wolverine.jpg';
 
 export const urlImgs = {
     'dc-arrow': arrow,
@@ -40,4 +40,4 @@ export const urlImgs = {
     'marvel-hawkeye': marvhawkeye,
     'marvel-cyclops': marvcyclops,
     'marvel-silver': marvsilver,
-}
+};

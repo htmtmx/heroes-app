@@ -1,10 +1,10 @@
-import { NavLink, Outlet, useNavigate } from "react-router";
+import { NavLink, Outlet, useNavigate } from 'react-router';
 
 export const Navbar = () => {
     const navigate = useNavigate();
     const onLogout = () => {
-        navigate("auth", { replace: true, });
-    }
+        navigate('auth', { replace: true, });
+    };
 
     return (
         <>
@@ -17,18 +17,18 @@ export const Navbar = () => {
                 <div className="navbar-collapse">
                     <div className="navbar-nav">
                         <NavLink
-                            className={`nav-item nav-link ${({ isActive }) => isActive ? "active" : ""}`}
+                            className={`nav-item nav-link ${({ isActive }) => isActive ? 'active' : ''}`}
                             to="/marvel" end>
                             Marvel
                         </NavLink>
 
                         <NavLink
-                            className={`nav-item nav-link ${({ isActive }) => isActive ? "active" : ""}`}
+                            className={`nav-item nav-link ${({ isActive }) => isActive ? 'active' : ''}`}
                             to="/dc">
                             DC
                         </NavLink>
                         <NavLink
-                            className={`nav-item nav-link ${({ isActive }) => isActive ? "active" : ""}`}
+                            className={`nav-item nav-link ${({ isActive }) => isActive ? 'active' : ''}`}
                             to="/search">
                             Search
                         </NavLink>
@@ -52,6 +52,5 @@ export const Navbar = () => {
                 <Outlet />
             </div>
         </>
-    )
-}
-
+    );
+};
